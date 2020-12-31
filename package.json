@@ -1,5 +1,5 @@
 {
-  "name": "freshworks-challenge",
+  "name": "filedatastore",
   "version": "0.1.0",
   "description": "File-based key-value data store that supports the basic CRD (create, read, and delete) operations. This data store is meant to be used as a local storage for one single process on one machine.",
   "homepage": "https://github.com/itsnikhil/filedatastore",

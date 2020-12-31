@@ -19,6 +19,9 @@ npm i filekeystore
 
 ## Usage
 ```js
+// JavaScript
+const { DataStore } = require('filekeystore')
+// TypeScript
 import { DataStore } from 'filekeystore'
 
 dataStore = new DataStore(file="data", path=".") 

@@ -1,9 +1,12 @@
-# FileDataStore [![NPM version][npm-image]][npm-url] [![Coverage Status][coverage-image]][npm-url]
+# FileDataStore [![GitHub actions build][build-image]][github-url] [![NPM version][npm-image]][npm-url] [![Coverage Status][coverage-image]][npm-url]
 
 
 [npm-image]:      https://img.shields.io/npm/v/filedatastore.svg
-[coverage-image]: https://coveralls.io/repos/github/itsnikhil/filedatastore/badge.svg?branch=2.0
+[build-image]:    https://github.com/itsnikhil/filedatastore/workflows/CI%20Pipeline/badge.svg
+[build-image]:    https://github.com/itsnikhil/filedatastore/workflows/CI%20Pipeline/badge.svg
+[coverage-image]: https://coveralls.io/repos/github/itsnikhil/filedatastore/badge.svg?branch=master
 [npm-url]:        https://npmjs.org/package/filedatastore
+[github-url]:     https://github.com/itsnikhil/filedatastore
 
 ## Introduction
 

@@ -14,7 +14,7 @@
 
 ## Installation
 
-``` npm i filekeystore ```
+npm i filekeystore
 
 
 ## Usage
@@ -68,11 +68,11 @@ $ Deleted!
 
 ## Tests
 
-#### Unit tests
-`npm run test`
+**Unit tests**
+> npm run test
 
-#### Test lint
-`npm run lint`
+**Test lint**
+> npm run lint
 
-#### Test coverage
-`npm run coverage`
+**Test coverage**
+> npm run coverage

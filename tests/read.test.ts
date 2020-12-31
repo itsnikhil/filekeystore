@@ -3,11 +3,13 @@
 // read.test.ts (c) 2020
 // Desc: description
 // Created:  Thu Dec 31 2020 20:02:05 GMT+0530 (India Standard Time)
-// Modified: Thu Dec 31 2020 20:07:09 GMT+0530 (India Standard Time)
+// Modified: Thu Dec 31 2020 20:12:07 GMT+0530 (India Standard Time)
 // 
 
 import { DataStore } from '../src/index';
 import { expect } from 'chai';
+import { after } from 'mocha';
+import { unlink } from 'fs';
 
 describe('DataStore Read Tests', () => {
   let dataStore: DataStore;
@@ -23,6 +25,11 @@ describe('DataStore Read Tests', () => {
         },
         expiry: 1
       })
+  })
+  after(() => {
+    unlink('./create.json', () => { });
+    unlink('./read.json', () => { });
+    unlink('./delete.json', () => { });
   })
 
   it('should return data if key exists', () => {

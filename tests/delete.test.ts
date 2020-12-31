@@ -3,13 +3,11 @@
 // delete.test.ts (c) 2020
 // Desc: description
 // Created:  Thu Dec 31 2020 20:02:13 GMT+0530 (India Standard Time)
-// Modified: Thu Dec 31 2020 20:07:18 GMT+0530 (India Standard Time)
+// Modified: Thu Dec 31 2020 20:12:04 GMT+0530 (India Standard Time)
 // 
 
 import { DataStore } from '../src/index';
 import { expect } from 'chai';
-import { after } from 'mocha';
-import { unlink } from 'fs';
 
 describe('DataStore Delete Tests', () => {
 
@@ -25,11 +23,6 @@ describe('DataStore Delete Tests', () => {
           b: 2,
         }
       })
-  })
-  after(() => {
-    unlink('./create.json', () => { });
-    unlink('./read.json', () => { });
-    unlink('./delete.json', () => { });
   })
 
   it('should reject delete operation if key not found', (done) => {

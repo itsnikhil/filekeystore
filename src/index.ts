@@ -30,7 +30,7 @@ export class DataStore {
     this.path = path;
   }
 
-  filepath:string = abspath(`${this.path}\\${this.file}.json`);
+  filepath: string = abspath(`${this.path}\\${this.file}.json`);
 
   create = (data: KeyValuePair): Promise<string> => {
     const filepath: string = `${this.path}\\${this.file}.json`;

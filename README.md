@@ -34,7 +34,7 @@ const response = dataStore.create({
         username: 'itsNikhil',
         isAwesome: true
     },
-    expiry: // number (TTL in sec, optional)
+    expiry: 3// number (TTL in sec, optional)
 });
 response // Promise<string>
     .then(result => console.log(result))

@@ -3,7 +3,7 @@
 // index.ts (c) 2020
 // Desc: description
 // Created:  Wed Dec 30 2020 21:50:22 GMT+0530 (India Standard Time)
-// Modified: Thu Dec 31 2020 19:53:09 GMT+0530 (India Standard Time)
+// Modified: Thu Dec 31 2020 20:52:37 GMT+0530 (India Standard Time)
 //
 
 import * as fs from 'fs';
@@ -41,9 +41,17 @@ export class DataStore {
       if (data.key.length > 32) {
         reject(new Error('Key length greater than 32 not allowed!'));
       }
+      if (JSON.stringify(data.value).length > (16*8*1024) /* 16KB */) {
+        reject(new Error('Value of size greater than 16KB is not allowed!'));
+      }
       if (data.expiry) data.expiry = data.expiry * 1000 + Date.now();
 
       if (fs.existsSync(filepath)) {
+        const stats: fs.Stats = fs.statSync(filepath);
+        const fileSizeInBytes: number = stats.size;
+        if (fileSizeInBytes > (1024*1024) /* 1GB */) {
+          reject(new Error('File too large!'));
+        }
         jsonfile
           .readFile(filepath)
           .then((existingData: JSONObject) => {

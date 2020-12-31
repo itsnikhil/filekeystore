@@ -1,4 +1,9 @@
-# LocalDataStore
+# FileDataStore [![NPM version][npm-image]][npm-url] [![Coverage Status][coverage-image]][npm-url]
+
+
+[npm-image]:      https://img.shields.io/npm/v/filedatastore.svg
+[coverage-image]: https://coveralls.io/repos/github/itsnikhil/filedatastore/badge.svg?branch=2.0
+[npm-url]:        https://npmjs.org/package/filedatastore
 
 ## Introduction
 
@@ -63,11 +68,11 @@ $ Deleted!
 #### Unit tests
 `npm run test`
 
+#### Test lint
+`npm run lint`
+
 #### Fix formatting
 `npm run format`
 
 #### Test coverage
 `npm run coverage`
-
-#### Test lint
-`npm run lint`

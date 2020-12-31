@@ -18,8 +18,8 @@
 ```js
 import { DataStore } from 'filedatastore'
 
-dataStore = new DataStore(file="data", path=".\\") 
-//path is optional and defaults to '.\\'
+dataStore = new DataStore(file="data", path=".") 
+//path is optional and defaults to current working directory
 ```
 
 #### Create Operation

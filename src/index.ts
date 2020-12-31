@@ -3,7 +3,7 @@
 // index.ts (c) 2020
 // Desc: description
 // Created:  Wed Dec 30 2020 21:50:22 GMT+0530 (India Standard Time)
-// Modified: Thu Dec 31 2020 20:52:37 GMT+0530 (India Standard Time)
+// Modified: Thu Dec 31 2020 22:30:43 GMT+0530 (India Standard Time)
 //
 
 import * as fs from 'fs';
@@ -30,10 +30,10 @@ export class DataStore {
     this.path = path;
   }
 
-  filepath: string = abspath(`${this.path}\\${this.file}.json`);
+  filepath: string = abspath(`${this.path}/${this.file}.json`);
 
   create = (data: KeyValuePair): Promise<string> => {
-    const filepath: string = `${this.path}\\${this.file}.json`;
+    const filepath: string = `${this.path}/${this.file}.json`;
     return new Promise((resolve, reject) => {
       if (Object.keys(data.value).length === 0) {
         reject(new Error('Data cannot be empty!'));
@@ -89,7 +89,7 @@ export class DataStore {
   };
 
   read = (key: string): Promise<string> => {
-    const filepath: string = `${this.path}\\${this.file}.json`;
+    const filepath: string = `${this.path}/${this.file}.json`;
     return new Promise((resolve, reject) => {
       const pipeline = chain([fs.createReadStream(filepath), parser(), pick({ filter: key }), streamObject()]);
       const data: KeyValuePair = {
@@ -113,7 +113,7 @@ export class DataStore {
   };
 
   delete = (key: string): Promise<string> => {
-    const filepath: string = `${this.path}\\${this.file}.json`;
+    const filepath: string = `${this.path}/${this.file}.json`;
     return new Promise((resolve, reject) => {
       jsonfile
         .readFile(filepath)

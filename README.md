@@ -60,7 +60,7 @@ $ {name: "Nikhil Taneja", username: "itsNikhil", isAwesome: true}
 
 #### Delete Operation
 ```js
-const response = dataStore.data('user'));
+const response = dataStore.delete('user'));
 response // Promise<string>
     .then(result => console.log(result))
     .catch(error => console.log(error))

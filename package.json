@@ -1,9 +1,9 @@
 {
-  "name": "filedatastore",
+  "name": "filekeystore",
   "version": "0.1.0",
   "description": "File-based key-value data store that supports the basic CRD (create, read, and delete) operations. This data store is meant to be used as a local storage for one single process on one machine.",
-  "homepage": "https://github.com/itsnikhil/filedatastore#readme",
-  "bugs": "https://github.com/itsnikhil/filedatastore/issues",
+  "homepage": "https://github.com/itsnikhil/filekeystore#readme",
+  "bugs": "https://github.com/itsnikhil/filekeystore/issues",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsnikhil/filedatastore"
+    "url": "git+https://github.com/itsnikhil/filekeystore"
   },
   "keywords": [
     "key value",

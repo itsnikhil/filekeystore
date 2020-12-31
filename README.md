@@ -1,12 +1,12 @@
-# FileDataStore [![GitHub actions build][build-image]][github-url] [![NPM version][npm-image]][npm-url] [![Coverage Status][coverage-image]][npm-url]
+# FileKeyStore [![GitHub actions build][build-image]][github-url] [![NPM version][npm-image]][npm-url] [![Coverage Status][coverage-image]][npm-url]
 
 
-[npm-image]:      https://img.shields.io/npm/v/filedatastore.svg
-[build-image]:    https://github.com/itsnikhil/filedatastore/workflows/CI%20Pipeline/badge.svg
-[build-image]:    https://github.com/itsnikhil/filedatastore/workflows/CI%20Pipeline/badge.svg
-[coverage-image]: https://coveralls.io/repos/github/itsnikhil/filedatastore/badge.svg?branch=master
-[npm-url]:        https://npmjs.org/package/filedatastore
-[github-url]:     https://github.com/itsnikhil/filedatastore
+[npm-image]:      https://img.shields.io/npm/v/filekeystore.svg
+[build-image]:    https://github.com/itsnikhil/filekeystore/workflows/CI%20Pipeline/badge.svg
+[build-image]:    https://github.com/itsnikhil/filekeystore/workflows/CI%20Pipeline/badge.svg
+[coverage-image]: https://coveralls.io/repos/github/itsnikhil/filekeystore/badge.svg?branch=master
+[npm-url]:        https://npmjs.org/package/filekeystore
+[github-url]:     https://github.com/itsnikhil/filekeystore
 
 ## Introduction
 
@@ -14,12 +14,12 @@
 
 ## Installation
 
-``` npm i filedatastore ```
+``` npm i filekeystore ```
 
 
 ## Usage
 ```js
-import { DataStore } from 'filedatastore'
+import { DataStore } from 'filekeystore'
 
 dataStore = new DataStore(file="data", path=".") 
 //path is optional and defaults to current working directory

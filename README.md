@@ -71,8 +71,5 @@ $ Deleted!
 #### Test lint
 `npm run lint`
 
-#### Fix formatting
-`npm run format`
-
 #### Test coverage
 `npm run coverage`

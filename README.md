@@ -37,19 +37,19 @@ const response = dataStore.create({
         username: 'itsNikhil',
         isAwesome: true
     },
-    expiry: 3// number (TTL in sec, optional)
+    expiry: 3 // number (TTL in sec, optional)
 });
 response // Promise<string>
     .then(result => console.log(result))
     .catch(error => console.log(error))
 
 // Output
-$ Write complete! Saved to "./path/file.json"
+$ Write complete! Saved to "/path/file.json"
 ```
 
 #### Read Operation
 ```js
-const response = dataStore.read('user'));
+const response = dataStore.read('user');
 response // Promise<string>
     .then(result => console.log(JSON.parse(result)))
     .catch(error => console.log(error))
@@ -60,7 +60,7 @@ $ {name: "Nikhil Taneja", username: "itsNikhil", isAwesome: true}
 
 #### Delete Operation
 ```js
-const response = dataStore.delete('user'));
+const response = dataStore.delete('user');
 response // Promise<string>
     .then(result => console.log(result))
     .catch(error => console.log(error))

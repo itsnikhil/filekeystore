@@ -1,6 +1,5 @@
 # FileKeyStore [![GitHub actions build][build-image]][github-url] [![NPM version][npm-image]][npm-url] [![Coverage Status][coverage-image]][npm-url]
 
-
 [npm-image]:      https://img.shields.io/npm/v/filekeystore.svg
 [build-image]:    https://github.com/itsnikhil/filekeystore/workflows/CI%20Pipeline/badge.svg
 [build-image]:    https://github.com/itsnikhil/filekeystore/workflows/CI%20Pipeline/badge.svg
@@ -73,9 +72,32 @@ $ Deleted!
 
 **Unit tests**
 > npm run test
+```py
+> mocha -r ts-node/register tests/**/*.test.ts
+
+  DataStore Create Tests:
+    √ should initialise with correct filepath
+    √ should write data to file
+    √ should write data to file with TTL     
+    √ should reject create operation if key already exists        
+    √ should reject create operation if key length greater than 32
+
+  DataStore Delete Tests:
+    √ should reject delete operation if key not found
+    √ should delete data if key exists
+
+  DataStore Read Tests:
+    √ should return data if key exists
+    √ should return data before TTL expire
+    √ should reject read operation if key not found
+    √ should reject read operation if TTL expires (1502ms)
+
+  11 passing (2s)
+```
 
 **Test lint**
 > npm run lint
 
 **Test coverage**
 > npm run coverage
+---
